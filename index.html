@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Welcome</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid decor_bg">
+        <!-- start of navbar -->
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    <a class="navbar-brand" href="index.php">Fire</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end of navbar -->
+        <div class="row decor_row">
+            <div class="container">
+                <div class="col-lg-8" id="main">
+                    <h2 style="color:#000;">LOGIN</h2>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" name="e-mail" required="true">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password" name="password" required="true">
+                        </div>
+                        <button onclick="login()" type="button" name="submit" class="btn btn-primary pull-right">Submit</button>
+                    </form>
+                    <div id="msg">
+                        <h4 id="login_msg" style="color:#000;">Message</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+<script type="text/javascript" src="firebase_config.js"></script>
+    </div>
+</body>
+
+</html>
